@@ -31,6 +31,10 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
+body{
+  background: transparent url("./images/bg.png") center center no-repeat;
+  background-size:cover;
+}
 
 body>*:first-child {
   margin-top: 0 !important;
@@ -109,10 +113,11 @@ h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
 a {
   color: #4183C4;
   text-decoration: none;
+  color:#000;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* LISTS
@@ -122,11 +127,11 @@ ul, ol {
   padding-left: 30px;
 }
 
-ul li > :first-child, 
-ol li > :first-child, 
-ul li ul:first-of-type, 
-ol li ol:first-of-type, 
-ul li ol:first-of-type, 
+ul li > :first-child,
+ol li > :first-child,
+ul li ul:first-of-type,
+ol li ol:first-of-type,
+ul li ol:first-of-type,
 ol li ul:first-of-type {
   margin-top: 0px;
 }
@@ -284,9 +289,15 @@ table tr:nth-child(2n) {
 
 /* IMAGES
 =============================================================================*/
-
 img {
   max-width: 100%
+}
+h1,h6{
+  color: #fff;
+}
+a{
+  color: #fff;
+  font-family: "微软雅黑";
 }
 </style>
 </head>
@@ -294,7 +305,8 @@ img {
 <h1>welcome to my blog!</h1>
 <h6><em>By Gwemz</em></h6>
 <hr />
-<p><a href="./pages/2016-12-4.html">angularJS同后台数据交互的方式</a></p>
+<p>
+  <a href="./pages/2016-12-4.html">angularJS同后台数据交互的方式</a></p>
 
 </body>
 </html>
